@@ -39,12 +39,13 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             //para la lista de cajas
-            Expanded(child:ListView.builder(
-              itemCount: boxes.length,
-              itemBuilder: (context, index){
+            Expanded(
+              child:
+              ListView.builder(
+                itemCount: boxes.length,
+                itemBuilder: (context, index){
                 final box = boxes[index];
                 return BoxCard();
-
               }))
           ],
         ),
