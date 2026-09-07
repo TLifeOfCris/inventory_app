@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:inventariocajasapp/screens/home_screen.dart';
+import 'package:inventariocajasapp/app/app.dart';
 
 void main() {
-  runApp( HomeScreen());
+  runApp(const MyApp());
 }
 
 
