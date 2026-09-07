@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inventariocajasapp/screens/boxes_screen.dart';
 import '../screens/home_screen.dart';
 
 class MyApp extends StatelessWidget {
@@ -8,7 +9,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const HomeScreen(),
+      home: 
+      //const HomeScreen()
+      BoxesScreen()
+      ,
     );
   }
 }
