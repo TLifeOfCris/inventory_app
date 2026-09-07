@@ -1,3 +1,4 @@
+// Refleja una caja real, con el id, nombre, donde esta, descripción y los items que contienen
 class Box {
   final String id;
   final String name;
@@ -14,3 +15,13 @@ class Box {
     required this.items
   });
 }
+/* Box
+├── id: CAJA-001
+├── name: "Cosas de Navidad"
+├── location: "Clóset" / "Tercera caja de arriba hacia abajo"
+├── description: "Decoraciones navideñas"
+└── items:
+      ├── Luces
+      ├── Esferas
+      └── Corona
+*/
