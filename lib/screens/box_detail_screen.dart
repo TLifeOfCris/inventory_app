@@ -5,6 +5,16 @@ class BoxDetailScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(
+        children: <Widget>[
+          Text(' Título de la caja'),
+          Text('Ubicación'),
+          Text('Descripción'),
+          Text('Título "Contenido" '),
+          Expanded(child: Text(''),)
+        ],
+      ),
+    );
   }
 }
