@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inventariocajasapp/widgets/textfield/textfield.dart';
 
 class AddBoxScreen extends StatefulWidget {
   const AddBoxScreen({super.key});
@@ -21,7 +22,7 @@ class _AddBoxScreenState extends State<AddBoxScreen> {
           children: <Widget>[
             //probablemente se tenga que hacer un widget aquí 
             Text('ID de la caja'),
-            TextField(),
+            CustomTextField(hintText: 'Id de la caja'),
             //probablemente se tenga que hacer un widget aquí 
             Text('Nombre'),
             TextField(),
