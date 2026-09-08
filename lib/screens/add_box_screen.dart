@@ -25,13 +25,13 @@ class _AddBoxScreenState extends State<AddBoxScreen> {
             CustomTextField(hintText: 'Id de la caja'),
             //probablemente se tenga que hacer un widget aquí 
             Text('Nombre'),
-            TextField(),
+            CustomTextField(hintText: 'Nombre de la caja'),
             // seprador
             Text('Ubicación'),
-            TextField(),
+            CustomTextField(hintText: 'Ubicación de la caja'),
             // separador
             Text('Descripción'),
-            TextField(),
+            CustomTextField(hintText: 'que hay dentro de la caja que se guarda'),
             //separador
             ElevatedButton(onPressed: (){}, child: Text('Crear Caja'))
 
