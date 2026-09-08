@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:inventariocajasapp/screens/add_box_screen.dart';
+import 'package:inventariocajasapp/screens/box_detail_screen.dart';
 import 'package:inventariocajasapp/screens/boxes_screen.dart';
 import '../screens/home_screen.dart';
 
@@ -11,8 +13,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: 
       //const HomeScreen()
-      BoxesScreen()
-      ,
+      //BoxesScreen(),
+      //BoxDetailScreen(),
+      AddBoxScreen()
+
+      
     );
   }
 }

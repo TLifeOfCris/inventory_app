@@ -10,6 +10,12 @@ class AddBoxScreen extends StatefulWidget {
 class _AddBoxScreenState extends State<AddBoxScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+
+      appBar:  AppBar(
+        title: Text("Nueva Caja"),
+      ),
+
+    );
   }
 }
