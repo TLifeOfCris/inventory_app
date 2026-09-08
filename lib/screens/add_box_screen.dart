@@ -15,6 +15,30 @@ class _AddBoxScreenState extends State<AddBoxScreen> {
       appBar:  AppBar(
         title: Text("Nueva Caja"),
       ),
+      body: Padding(
+        padding: EdgeInsets.all(16.0),
+        child: Column(
+          children: <Widget>[
+            //probablemente se tenga que hacer un widget aquí 
+            Text('ID de la caja'),
+            TextField(),
+            //probablemente se tenga que hacer un widget aquí 
+            Text('Nombre'),
+            TextField(),
+            // seprador
+            Text('Ubicación'),
+            TextField(),
+            // separador
+            Text('Descripción'),
+            TextField(),
+            //separador
+            ElevatedButton(onPressed: (){}, child: Text('Crear Caja'))
+
+
+          ],
+        ),
+        
+      ),
 
     );
   }
