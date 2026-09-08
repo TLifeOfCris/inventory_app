@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
 
-class TextFieldWidget extends StatefulWidget {
-  const TextFieldWidget({super.key});
+class CustomTextField extends StatelessWidget {
+  final String hintText;
+  const CustomTextField({super.key,
+  required this.hintText});
 
-  @override
-  State<TextFieldWidget> createState() => _TextFieldWidgetState();
-}
-
-class _TextFieldWidgetState extends State<TextFieldWidget> {
   @override
   Widget build(BuildContext context) {
     return TextField(
   decoration: InputDecoration(
-    hintText: 'Nombre de la caja',
+    hintText: hintText,
     filled: true,
     fillColor: Colors.grey.shade100,
     border: OutlineInputBorder(
