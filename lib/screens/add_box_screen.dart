@@ -33,7 +33,8 @@ class _AddBoxScreenState extends State<AddBoxScreen> {
             Text('Descripción'),
             CustomTextField(hintText: 'que hay dentro de la caja que se guarda'),
             //separador
-            ElevatedButton(onPressed: (){}, child: Text('Crear Caja'))
+            ElevatedButton(onPressed: (){}, 
+            child: Text('Crear Caja'))
 
 
           ],
