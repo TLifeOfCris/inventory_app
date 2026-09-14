@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:inventariocajasapp/providers/boxes_provider.dart';
 import 'package:inventariocajasapp/widgets/box_card.dart';
+import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final List<String> boxes = [
-  'Caja 001',
-  'Caja 002',
-  'Caja 003',
-];
+    final boxes = context.watch<BoxesProvider>().boxes;
     return Scaffold(
       appBar: AppBar(
         title: Text('Mi Inventario'),
