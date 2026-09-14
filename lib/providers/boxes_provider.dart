@@ -13,6 +13,8 @@ class BoxesProvider extends ChangeNotifier {
       ])
   ];
   List<Box> get boxes => _boxes;
+
+  //Para agregar cajas al provider.
   void addBox(Box box){
     _boxes.add(box);
     notifyListeners();

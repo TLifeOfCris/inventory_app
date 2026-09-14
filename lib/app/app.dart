@@ -19,10 +19,10 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         home: 
-        const HomeScreen()
+        //const HomeScreen()
         //BoxesScreen(),
         //BoxDetailScreen(),
-        //AddBoxScreen()
+        AddBoxScreen()
       
         
       ),
