@@ -1,2 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/box.dart';
+class BoxesProvider extends ChangeNotifier {
+
+  
+}
