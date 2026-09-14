@@ -17,7 +17,7 @@ class _AddBoxScreenState extends State<AddBoxScreen> {
   final descripcion = TextEditingController();
   final ubicacion = TextEditingController();
   Widget build(BuildContext context) {
-    final  boxes = context.watch<BoxesProvider>().boxes;
+    final boxesProvider = context.read<BoxesProvider>();
     return Scaffold(
 
       appBar:  AppBar(
@@ -41,7 +41,7 @@ class _AddBoxScreenState extends State<AddBoxScreen> {
             CustomTextField(hintText: 'que hay dentro de la caja que se guarda', controller:  descripcion,),
             //separador
             ElevatedButton(onPressed: (){
-              
+              boxesProvider.addBox;
             }, 
             child: Text('Crear Caja'))
 
