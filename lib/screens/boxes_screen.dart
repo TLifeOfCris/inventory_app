@@ -13,7 +13,8 @@ class BoxesScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Mis Cajas'),
       ), body: ListView.builder(
-        itemCount: 3,
+        //cantidad real de cajas que hay
+        itemCount: boxes.length,
         itemBuilder: (context, index){
         return BoxCard(box: boxes[index],);
       }),
