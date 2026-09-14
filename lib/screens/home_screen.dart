@@ -43,7 +43,7 @@ class HomeScreen extends StatelessWidget {
                 itemCount: boxes.length,
                 itemBuilder: (context, index){
                 final box = boxes[index];
-                return BoxCard();
+                return BoxCard(box: boxes[index],);
               }))
           ],
         ),

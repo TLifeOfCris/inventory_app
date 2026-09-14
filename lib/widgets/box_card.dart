@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:inventariocajasapp/providers/boxes_provider.dart';
 import 'package:provider/provider.dart';
 
+import '../models/box.dart';
+
 class BoxCard extends StatelessWidget {
-  const BoxCard({super.key});
+  final Box box; 
+  const BoxCard({super.key, required this.box});
 
   @override
   Widget build(BuildContext context) {
@@ -11,8 +14,8 @@ class BoxCard extends StatelessWidget {
     return Card(
       child: ListTile(
         leading: const Icon(Icons.inventory_2),
-        title: const Text('Caja 001'),
-        subtitle: const Text('Cosas de Navidad'),
+        title:  Text(box.id),
+        subtitle:  Text(box.description),
         trailing: const Icon(Icons.arrow_forward_ios),
       ),
     );
