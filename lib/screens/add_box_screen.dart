@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:inventariocajasapp/providers/boxes_provider.dart';
 import 'package:inventariocajasapp/widgets/textfield/textfield.dart';
+import 'package:provider/provider.dart';
 
 class AddBoxScreen extends StatefulWidget {
   const AddBoxScreen({super.key});
@@ -15,6 +17,7 @@ class _AddBoxScreenState extends State<AddBoxScreen> {
   final descripcion = TextEditingController();
   final ubicacion = TextEditingController();
   Widget build(BuildContext context) {
+    final  boxes = context.watch<BoxesProvider>().boxes;
     return Scaffold(
 
       appBar:  AppBar(
