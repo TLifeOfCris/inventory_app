@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:inventariocajasapp/models/box.dart';
 import 'package:inventariocajasapp/providers/boxes_provider.dart';
 import 'package:inventariocajasapp/widgets/textfield/textfield.dart';
 import 'package:provider/provider.dart';
@@ -41,7 +42,13 @@ class _AddBoxScreenState extends State<AddBoxScreen> {
             CustomTextField(hintText: 'que hay dentro de la caja que se guarda', controller:  descripcion,),
             //separador
             ElevatedButton(onPressed: (){
+              final nuevaCaja = Box(id: controllerID.text,
+               name: nombreCaja.text,  
+               location: ubicacion.text, 
+               description: descripcion.text, 
+               items: []);
               boxesProvider.addBox;
+              Navigator.pop(context);
             }, 
             child: Text('Crear Caja'))
 
