@@ -13,6 +13,14 @@ class AddBoxScreen extends StatefulWidget {
 
 class _AddBoxScreenState extends State<AddBoxScreen> {
   @override
+  void dispose() {
+  controllerID.dispose();
+  nombreCaja.dispose();
+  descripcion.dispose();
+  ubicacion.dispose();
+  super.dispose();
+  }
+  @override
   final controllerID = TextEditingController();
   final nombreCaja = TextEditingController();
   final descripcion = TextEditingController();
