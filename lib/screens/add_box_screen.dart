@@ -55,7 +55,7 @@ class _AddBoxScreenState extends State<AddBoxScreen> {
                location: ubicacion.text, 
                description: descripcion.text, 
                items: []);
-              boxesProvider.addBox;
+              boxesProvider.addBox(nuevaCaja);
               Navigator.pop(context);
             }, 
             child: Text('Crear Caja'))
