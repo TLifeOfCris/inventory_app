@@ -20,6 +20,7 @@ class BoxDetailScreen extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Text(' Título de la caja'),
             Text('Ubicación'),
