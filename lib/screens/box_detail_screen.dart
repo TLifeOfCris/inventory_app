@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:inventariocajasapp/models/box.dart';
 
 class BoxDetailScreen extends StatelessWidget {
-  const BoxDetailScreen({super.key});
+  final Box box; 
+  const BoxDetailScreen({
+  super.key,
+  required this.box,
+  });
 
   @override
   Widget build(BuildContext context) {
