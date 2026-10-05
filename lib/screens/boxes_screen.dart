@@ -37,9 +37,9 @@ class BoxesScreen extends StatelessWidget {
                   ),
                   );
                   },
-  child: const Text('Agregar caja'),
-)
-        ],
+                  child: const Text('Agregar caja'),
+                  )
+            ],
       ),
     );
   }

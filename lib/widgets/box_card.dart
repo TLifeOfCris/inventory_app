@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:inventariocajasapp/providers/boxes_provider.dart';
+import 'package:inventariocajasapp/screens/box_detail_screen.dart';
 import 'package:provider/provider.dart';
 
 import '../models/box.dart';
@@ -17,6 +18,10 @@ class BoxCard extends StatelessWidget {
         title:  Text(box.id),
         subtitle:  Text(box.description),
         trailing: const Icon(Icons.arrow_forward_ios),
+        onTap: () {
+          Navigator.push(context, 
+          MaterialPageRoute(builder: (context) => BoxDetailScreen(box: box)));
+        },
       ),
     );
   }
