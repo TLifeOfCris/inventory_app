@@ -11,14 +11,23 @@ class BoxDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: <Widget>[
-          Text(' Título de la caja'),
-          Text('Ubicación'),
-          Text('Descripción'),
-          Text('Título "Contenido" '),
-          Expanded(child: Text(''),)
-        ],
+      backgroundColor: const Color(0xFFF5F5F7),
+      appBar: AppBar(
+        title: Text('Detalle de caja'),
+        backgroundColor: const Color(0xFFF5F5F7),
+        surfaceTintColor: Colors.transparent,
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(16.0),
+        child: Column(
+          children: <Widget>[
+            Text(' Título de la caja'),
+            Text('Ubicación'),
+            Text('Descripción'),
+            Text('Título "Contenido" '),
+            Expanded(child: Text(''),)
+          ],
+        ),
       ),
     );
   }
