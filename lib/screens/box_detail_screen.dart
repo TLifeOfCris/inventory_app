@@ -24,11 +24,34 @@ class BoxDetailScreen extends StatelessWidget {
           children: <Widget>[
             //Tarjeta de información
             //Se reemplazaran estos Text por Card
+            /*
             Text(' Título de la caja'),
             Text('Ubicación'),
             Text('Descripción'),
             Text('Título "Contenido" '),
             Expanded(child: Text(''),)
+            */
+
+            Card(
+              elevation: 0,
+              color: Colors.white,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Padding(padding: EdgeInsets.all(20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    padding: EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      color: Color(0xFFE8EEFF)
+                    ),
+                  )
+                ],
+              ),
+              ),
+            )
           ],
         ),
       ),
