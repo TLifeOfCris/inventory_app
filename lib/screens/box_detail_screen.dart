@@ -22,6 +22,8 @@ class BoxDetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            //Tarjeta de información
+            //Se reemplazaran estos Text por Card
             Text(' Título de la caja'),
             Text('Ubicación'),
             Text('Descripción'),
